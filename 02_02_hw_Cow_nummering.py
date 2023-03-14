@@ -1,9 +1,11 @@
-n= int(input("Введите сколько коров пасутся на лугу: "))
-last_dig=n%10
-second_last_dig=n//10%10
-if last_dig == 1 and second_last_dig != 1:
-    print("на лугу пасутся ",n, "корова!")
-elif  last_dig in range(2,5) and second_last_dig != 1:
-    print("на лугу пасутся ",n, "коровы!")
-elif last_dig >= 5 or second_last_dig == 1:
-    print("на лугу пасутся ",n, "коров!")
+n = int(input("Введите сколько коров пасутся на лугу: "))
+last_two = n % 100
+
+if last_two % 10 == 1 and last_two != 11:
+    print("на лугу пасутся ", n, "корова!")
+elif 2 <= last_two % 10 <= 4 and not 12 <= last_two <= 14:
+    print("на лугу пасутся ", n, "коровы!")
+else:
+    print("на лугу пасутся ", n, "коров!")
+
+# задача на плюрализацию - задача на согласование окончаний
