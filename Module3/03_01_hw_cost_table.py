@@ -15,6 +15,5 @@ n = int(input("Введите кол-во товара: "))
 
 count = 1
 while count <= n:
-    print(count, " ", cost * count, " рублей")
-    count +=1
-
+    print(count, " ", round(cost * count, 2), " рублей")
+    count += 1
