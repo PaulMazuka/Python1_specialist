@@ -10,6 +10,6 @@ import random
 numbers = []
 
 n = int(input("Введите кол-во целых чисел для списка: "))
-for i in range(0,n):
+for i in range(n):
     numbers.append(random.randint(-100, 100))
 print(numbers)

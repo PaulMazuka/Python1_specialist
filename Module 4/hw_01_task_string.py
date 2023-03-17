@@ -20,3 +20,6 @@ for letter in text:
 print("comma= ", comma, "blow=: ", blow)
 if blow == comma:
     print("запятых и точек одинаково")
+
+
+#  либо через метод строки .count

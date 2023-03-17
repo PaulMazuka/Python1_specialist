@@ -3,3 +3,14 @@
 # если слова на эту букву нет, выведите "слов на б нет"
 
 text = "Антон Борис Алексей Федор Боря"
+
+words = text.split(" ")
+
+word_b = ""
+for word in words:
+    if word.lower().startswith(("б"))
+        word_b = word
+        print(word_b)
+        break
+if word_b == "":
+    print("Слов нет")
