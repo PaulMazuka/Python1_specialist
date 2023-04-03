@@ -13,7 +13,8 @@
 cost = float(input("Введите стоимость товара в рублях: "))
 n = int(input("Введите кол-во товара: "))
 
-count = 1
+count = 0
 while count <= n:
-    print(count, " ", round(cost * count, 2), " рублей")
     count += 1
+    print(f"{count} {cost * count:.2f} рублей")
+    # print(count, " ", round(cost * count, 2), " рублей")

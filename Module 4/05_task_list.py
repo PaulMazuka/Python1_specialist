@@ -3,7 +3,7 @@
 # выровненного по правой стороне - слева короткие слова дополняем символами пробела
 
 # Исходные данные:
-fruits = ["яблоко", "банан", "киви", "арбуз"]
+fruits = ["яблоко", "банан", "кивикивикиви", "арбуз"]
 
 long_dig = 0
 for fruit in fruits:
@@ -12,8 +12,8 @@ for fruit in fruits:
 i = 0
 for fruit in fruits:
     i += 1
-    print(i, ".", fruit.rjust(long_dig))
-
+    # print(i, ".", fruit.rjust(long_dig))
+    print(f"{i}.{fruit:>{long_dig}}")  #решение через f строку
 # Пример вывода:
 # 1. яблоко
 # 2.  банан
