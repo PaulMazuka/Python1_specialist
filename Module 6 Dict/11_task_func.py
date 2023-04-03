@@ -6,7 +6,7 @@ def average(*args):
 
 
 def gen_list(size, at=-10, to=10):
-    import ragitndom  # импорт в функции возможен, но не рекомендуется PEP-8
+    import random  # импорт в функции возможен, но не рекомендуется PEP-8
     """
     :param size: кол-во элементов списка
     :param at: минимально возможное значение элементов
